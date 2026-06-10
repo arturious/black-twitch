@@ -26,23 +26,31 @@
   fill: #000000 !important;
 }
 
-/* Ensure the Twitch logo container and link can expand to fit both elements side-by-side */
-div:has(> a[data-a-target="logo-button"]),
-a[data-a-target="logo-button"] {
+/* Ensure all logo container wrappers can expand to fit the logo + wordmark side-by-side */
+body.tw-root--theme-dark nav.top-nav a[data-a-target="logo-button"],
+body.tw-root--theme-dark nav.top-nav div:has(> a[data-a-target="logo-button"]),
+body.tw-root--theme-dark nav.top-nav div:has(> div > a[data-a-target="logo-button"]),
+body.tw-root--theme-dark nav.top-nav div:has(> div > div > a[data-a-target="logo-button"]) {
   width: auto !important;
   min-width: max-content !important;
   flex-basis: auto !important;
   flex-grow: 0 !important;
   flex-shrink: 0 !important;
+}
+
+/* Enforce flexbox layout on the logo button and its immediate wrapper to align items vertically */
+body.tw-root--theme-dark nav.top-nav a[data-a-target="logo-button"],
+body.tw-root--theme-dark nav.top-nav div:has(> a[data-a-target="logo-button"]) {
   display: inline-flex !important;
   align-items: center !important;
 }
 
 /* Style the custom Twitch wordmark logo */
 #black-twitch-wordmark {
-  height: 28px !important;
+  height: 25px !important;
   width: auto !important;
   margin-left: 4px !important;
+  margin-right: 20px !important;
   flex-shrink: 0 !important;
   display: inline-block !important;
 }
