@@ -57,7 +57,7 @@ a[data-a-target="logo-button"] {
 /* Style the custom Twitch wordmark logo */
 #black-twitch-wordmark {
     height: 28px !important;
-    margin-left: 8px !important;
+    margin-left: 20px !important;
     flex-shrink: 0 !important;
     display: inline-block !important;
 }
