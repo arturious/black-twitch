@@ -51,6 +51,18 @@ a[data-a-target="logo-button"] {
     flex-shrink: 0 !important;
     display: inline-block !important;
 }
+
+/* Ensure the Following and Browse icons are always displayed */
+nav.top-nav a[href="/directory/following"] > div > div:has(svg),
+nav.top-nav a[href="/directory"] > div > div:has(svg) {
+    display: flex !important;
+}
+
+/* Ensure the Following and Browse text labels are always hidden */
+nav.top-nav a[href="/directory/following"] > div > div:not(:has(svg)),
+nav.top-nav a[href="/directory"] > div > div:not(:has(svg)) {
+    display: none !important;
+}
     `;
     
     function injectCSS() {
