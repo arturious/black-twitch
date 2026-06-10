@@ -40,7 +40,8 @@
   "web_accessible_resources": [
     {
       "resources": [
-        "css/style.css"
+        "css/style.css",
+        "images/twitch-logo-purple.png"
       ],
       "matches": [
         "*://*.twitch.tv/*"
