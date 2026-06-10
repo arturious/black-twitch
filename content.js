@@ -27,6 +27,10 @@
 body {
     background-color: #000 !important;
 }
+
+.fUZLqr, [class*="ScFace-"] {
+    fill: #000000 !important;
+}
     `;
     
     function injectCSS() {
