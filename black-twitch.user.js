@@ -86,6 +86,20 @@ nav.top-nav a[href="/directory"] > div > div:not(:has(svg)) {
 div.Layout-sc-1xcs6mc-0.fRzsnK {
     padding: 0px 0px !important;
 }
+
+div.Layout-sc-1xcs6mc-0.bMcAyM {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+div.Layout-sc-1xcs6mc-0.hCMJIV {
+    position: fixed !important;
+    left: 0px !important;
+    top: 0px !important;
+    width: 100% !important;
+    height: 5rem !important;
+    z-index: 99999 !important;
+}
     `;
 
   function injectCSS() {
