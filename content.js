@@ -72,6 +72,10 @@ nav.top-nav a[href="/directory/following"] > div > div:not(:has(svg)),
 nav.top-nav a[href="/directory"] > div > div:not(:has(svg)) {
     display: none !important;
 }
+
+div.Layout-sc-1xcs6mc-0.fRzsnK {
+    padding: 0px 0px !important;
+}
     `;
 
   function injectCSS() {
